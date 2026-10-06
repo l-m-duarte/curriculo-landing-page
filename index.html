@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Currículo online.">
+    <title>Currículo | Luiz Miguel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div id="progresso-leitura" aria-hidden="true"></div>
+
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <main id="conteudo" tabindex="-1">
+        <nav class="navegacao" aria-label="Seções da página">
+            <div class="navegacao-desktop">
+                <a href="#sobre">Sobre</a>
+                <a href="#formacao">Formação</a>
+                <a href="#competencias">Competências</a>
+                <a href="#portfolio">Portfólio</a>
+                <a href="#contato">Contato</a>
+            </div>
+
+            <details class="menu-mobile">
+                <summary class="menu-mobile-botao">☰ Menu</summary>
+                <nav class="menu-mobile-lista" aria-label="Menu de seções">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#formacao">Formação</a>
+                    <a href="#competencias">Competências</a>
+                    <a href="#portfolio">Portfólio</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+            </details>
+        </nav>
+
+        <section id="sobre" class="secao">
+            <h2 class="titulo-secao">Sobre Mim</h2>
+
+            <div class="sobre-conteudo">
+                <div class="foto-perfil" aria-label="Espaço reservado para foto de Luiz Miguel">
+                    <img src="assets/portfolio/foto.png">
+                </div>
+
+                <article class="sobre-texto revelar">
+                    <h3>Luiz Miguel</h3>
+                    <p>
+                        Sou aluno de Sistemas de Informação e gosto de trabalhar com programação de forma prática.
+                        Minha formação começou no ensino médio, com formação em TI no IF Sul de Minas — Campus Machado,
+                        onde continuo estudando hoje.
+                    </p>
+                    <p>
+                        Tenho experiência com Lua e C#, e procuro aplicar meu conhecimento em sistemas de forma
+                        competente, sobretudo, em desenvolvimento de jogos digitais de forma produtiva com importância
+                        além de mero entretenimento.
+                    </p>
+
+                </article>
+            </div>
+        </section>
+
+        <section id="formacao" class="secao">
+            <h2 class="titulo-secao">Formação Acadêmica</h2>
+
+            <article class="formacao revelar">
+                <h3>Sistemas de Informação</h3>
+                <p><strong>IF Sul de Minas — Campus Machado</strong></p>
+                <p>2º semestre da graduação em Sistemas de Informação.</p>
+            </article>
+
+            <article class="formacao revelar">
+                <h3>Ensino médio em TI</h3>
+                <p><strong>IF Sul de Minas — Campus Machado</strong></p>
+                <p>Formação concluída em Tecnologia da Informação no ensino médio.</p>
+            </article>
+        </section>
+
+        <section id="competencias" class="secao">
+            <h2 class="titulo-secao">Competências</h2>
+
+            <ul class="lista-habilidades">
+                <li class="habilidade revelar">Lua</li>
+                <li class="habilidade revelar">C#</li>
+                <li class="habilidade revelar">Orientação a eventos</li>
+                <li class="habilidade revelar">Máquinas de estado</li>
+                <li class="habilidade revelar">Modularização de sistemas</li>
+                <li class="habilidade revelar">Debugging</li>
+            </ul>
+        </section>
+
+        <section id="portfolio" class="secao">
+            <h2 class="titulo-secao">Projetos</h2>
+
+            <div class="portfolio-carrossel revelar" data-carrossel-portfolio aria-roledescription="carrossel"
+                aria-label="Projetos do portfólio">
+
+                <div class="portfolio-slides">
+                    <article class="projeto portfolio-slide" data-slide="0" aria-hidden="false">
+                        <div class="projeto-imagem">
+                            <img src="assets/portfolio/projeto-01.png"
+                                alt="Paisagem de jogo com ambientalismo japonês tradicional">
+                        </div>
+                        <div class="projeto-conteudo">
+                            <h3>Pânico no Oriente</h3>
+                            <p>
+                                Responsável pela I.A de personagens não-controláveis, construção de mundo
+                                e ambientação e implementação de frames coordenadas, usando LUA.
+                            </p>
+                            <a class="link" href="">Mais informações ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="projeto portfolio-slide" data-slide="1" aria-hidden="true" hidden>
+                        <div class="projeto-imagem">
+                            <img src="assets/portfolio/projeto-02.png"
+                                alt="Interface de programa para rodar slideshow de propagandas indoor">
+                        </div>
+                        <div class="projeto-conteudo">
+                            <h3>Slide-show de propaganda Indoor</h3>
+                            <p>
+                                Desenvolvido sozinho. Inteiramente em Flutter, o painel de controle feito
+                                com HTML e JavaScript.
+                            </p>
+                            <a class="link" href="">Mais informações ↗</a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="carrossel-controles" aria-label="Controles do portfólio">
+                    <button id="portfolio-anterior" class="botao" type="button"
+                        aria-label="Projeto anterior">←</button>
+                    <span id="indice-portfolio" aria-live="polite">1 / 4</span>
+                    <button id="portfolio-proximo" class="botao" type="button"
+                        aria-label="Próximo projeto">→</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="secao">
+            <h2 class="titulo-secao">Contato</h2>
+
+            <div class="contato-conteudo">
+                <article class="contato-card revelar">
+                    <h3>Vamos conversar?</h3>
+                    <p>
+                        Contato para oportunidades de estágio, projetos, programação ou assuntos ligados à graduação.
+                    </p>
+                    <p>
+                        <a id="email-profissional" class="link" href="mailto:luiz.duarte@alunos.ifsuldeminas.edu.br">
+                            luiz.duarte@alunos.ifsuldeminas.edu.br
+                        </a>
+                    </p>
+
+                    <div class="acoes">
+                        <button id="copiar-email" class="botao" type="button">Copiar e-mail</button>
+                    </div>
+                    <p id="feedback-copia" role="status" aria-live="polite"></p>
+                </article>
+
+                <form id="form-contato" class="contato-card formulario revelar"
+                    action="mailto:luizmiguel@example.com" method="post" enctype="text/plain"
+                    aria-describedby="aviso-formulario">
+                    <h3>Prepare uma mensagem</h3>
+                    <p id="aviso-formulario" class="aviso-formulario">
+                        Os dados são validados no navegador. Ao final, o site prepara um rascunho para o seu
+                        aplicativo de e-mail; nada é enviado ou armazenado pelo site.
+                    </p>
+
+                    <div class="formulario-campos">
+                        <p>
+                            <label for="nome">Nome</label>
+                            <input id="nome" aria-describedby="erro-nome" type="text" name="nome" maxlength="100"
+                                autocomplete="name" placeholder="Como você se chama?" required>
+                            <small id="erro-nome" class="erro-campo" hidden></small>
+                        </p>
+
+                        <p>
+                            <label for="email">E-mail</label>
+                            <input id="email" aria-describedby="erro-email" type="email" name="email" maxlength="254"
+                                autocomplete="email" placeholder="voce@exemplo.com" required>
+                            <small id="erro-email" class="erro-campo" hidden></small>
+                        </p>
+
+                        <p>
+                            <label for="assunto">Assunto</label>
+                            <select id="assunto" aria-describedby="erro-assunto" name="assunto" required>
+                                <option value="" selected disabled>Selecione uma opção</option>
+                                <option>Oportunidade de estágio</option>
+                                <option>Projeto de jogo</option>
+                                <option>Programação</option>
+                                <option>Outro assunto</option>
+                            </select>
+                            <small id="erro-assunto" class="erro-campo" hidden></small>
+                        </p>
+
+                        <p>
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem"
+                                aria-describedby="erro-mensagem contador-mensagem"
+                                name="mensagem" rows="7" maxlength="2000"
+                                placeholder="Conte um pouco sobre a oportunidade ou o projeto."
+                                required></textarea>
+                            <small id="erro-mensagem" class="erro-campo" hidden></small>
+                            <small id="contador-mensagem">0 / 2000 caracteres</small>
+                        </p>
+                    </div>
+
+                    <button class="botao" type="submit">Preparar e-mail ↗</button>
+                    <a id="abrir-rascunho" class="botao botao--link" hidden>
+                        Abrir rascunho no aplicativo de e-mail
+                    </a>
+                    <p id="feedback-formulario" class="feedback-formulario" role="status" aria-live="polite"
+                        hidden></p>
+
+                    <noscript>
+                        Ative o JavaScript para usar a validação e a preparação de rascunho, ou utilize o e-mail acima.
+                    </noscript>
+                </form>
+            </div>
+        </section>
+
+        <footer class="rodape">
+            <div>
+                <p>© <span data-ano>2026</span> · Luiz Miguel</p>
+                <p>Graduando em Sistemas de Informação · TI</p>
+            </div>
+            <a class="link link--rodape" href="#sobre">Voltar ao início ↑</a>
+        </footer>
+    </main>
+
+    <a class="voltar-topo botao" href="#sobre" aria-label="Voltar ao início">↑</a>
+</body>
+
+</html>
